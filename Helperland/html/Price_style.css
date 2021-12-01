@@ -1,0 +1,488 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  
+  h1,
+  h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+    text-align: center;
+    font-family: Roboto;
+        font-size: 36px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.67;
+        letter-spacing: normal;
+        color:#4f4f4f;
+
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  code,
+  pre {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .hidden {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navbar{
+    
+        background-color:#525252;
+        color: #fff;
+        height: fit-content;
+   }
+
+   .navbar .flex{
+       justify-content: space-between;
+   }
+
+   .round-rectangle-1 {
+    width: 100px;
+    height: 30px;
+    margin: 4px 2px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    background-color:#29626d;
+  }
+
+  .rounded-rectangle-transperent{
+    width: 100px;
+    height: 30px;
+    margin: 4px 2px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    background-color:#29626d;
+  }
+   .navbar ul{
+       display: flex;
+   }
+
+   .navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+  }
+  
+
+  .container {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0px 40px;
+  }
+  .container .flex{
+    background-color: #333;
+
+  }
+  
+  .logo{
+      height: 54px;
+      width: 74px;
+  }
+
+  .price-banner{
+    height:370px;
+    width:100%;
+    margin-top: 0px;
+    object-fit: contain;
+}
+
+.center-line{
+    width: 62px;
+    height: 1px;
+    margin: 30px 9px 54px 9px;
+    background-color: #ccc;
+}
+
+.prices .span{
+    width: 98px;
+    height: 27px;
+    color: blue;
+}
+
+.center-img{
+    width: 24px;
+  height: 25px;
+  margin: 18px 8px 42px;
+}
+
+.one-time .container{
+    width: 553px;
+  height: 304px;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 0 0 32px;
+  border: solid 1px #b0c9ce;
+  background-color:white;
+}
+
+
+
+.container .blue-rect{
+    width: 550px;
+    height: 59px;
+    padding: 15px;
+    margin-bottom: 5px;
+    background-color: #1d7a8c;
+}
+
+.container .blue-rect h4{
+   margin-left: 150px;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.86;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+}
+
+.container .price-details li{
+    list-style-image: url('img/forma-1_5.png');
+  height: 15px;
+  margin-left: 35%;
+  margin-top: 5%;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #646464;
+
+}
+.services .container{
+      max-width: 1100px;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 0 40px;
+    
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.eclipse{
+    width: 108px;
+  height: 108px;
+    border-radius: 50%;
+  border: solid 1px black;
+}
+
+.services h5{
+    width: fit-content;
+    height: 12px;
+    
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #646464;
+}
+
+.services p{
+    width: 90px;
+    height: 14px;
+    
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1d7a8c;
+}
+.services-img{
+    width: 37px;
+  height: 48px;
+  margin-left: 36px;
+  margin-top: 30px;
+  object-fit: contain;
+  
+}
+
+.include{
+    width: 100%;
+    height: 707px;
+    margin-top: 70px;
+    padding: 50px;
+    background-color: #f6f6f6;
+  
+}
+
+.card {
+  
+    color: #333;
+      margin: 10px;
+    margin-top: -300px;
+  }
+
+h4{
+    width: 235px;
+  height: 19px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #4f4f4f;
+}
+
+.card li{
+    list-style-image: url('img/right-arrow.png'); 
+    padding: 5px;
+    margin-left: 20px;
+     text-align:justify;
+     font-family: Roboto;
+     font-size: 16px;
+     font-weight: normal;
+     font-stretch: normal;
+     font-style: normal;
+     line-height: 2.25;
+     letter-spacing: normal;
+     text-align: left;
+     color: #4f4f4f;
+}
+
+.card-img{
+    width: 360px;
+  height: 210px;
+  
+  object-fit: contain;
+}
+
+.text-end h4{
+    width: 335px;
+  height: 19px;
+    margin-top: 40px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: right;
+  color: #646464;
+}
+
+.text-end p{
+    width: 284px;
+  height: 54px;
+  margin: 13px 46px 47px 10px;
+    margin-bottom: 100px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: right;
+  color: #646464;
+}
+
+.img-end img{
+    width: 329px;
+    height: 236px;
+    margin: 42px 8px 66px 6px;
+    object-fit: contain;
+}
+
+.text-end-2 h4{
+    width: 335px;
+  height: 19px;
+    margin-top: 40px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #646464;
+}
+
+.text-end-2 p{
+    width: 284px;
+  height: 54px;
+  margin: 13px 46px 47px 10px;
+    margin-bottom: 100px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #646464;
+}
+
+
+footer {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    padding: 27px 0 0 0;
+    background-color: #111;
+    display: block;
+  }
+  
+  .logo-footer{
+    width: 106px;
+    height: 78px;
+   
+  }
+  
+  .footer-list {
+    margin-left: 490px;
+    margin-top:-60px;
+    margin-bottom: 50px;
+    font-family: Roboto;
+    text-transform: uppercase;
+  }
+  
+  ul.footer-list {
+    list-style-type: none;
+    color: white;
+    font-size: 14px;
+  }
+  
+  footer li {
+    float: left;
+    padding: 10px;
+  }
+  
+  .icons{
+     margin-top: -100px;
+      margin-left: 1400px;
+      margin-bottom: 50px
+  }
+  
+  .icons-img{
+    padding: 0 7px;
+    margin-top: -500px;
+    height: 25px;
+    width: 25px;
+  }
+  
+  .footer-color{
+    width: 100%;
+    background-color: #292929;
+    height: 55px;
+  }
+  
+  .footer-text {
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-size:14px;
+    margin-top: 10px;
+  }
+
+  .color-blue{
+    color:#6EABEF;
+  }
+
+@media (max-width:900px){
+   
+    .container{
+        width: 850px;
+    }
+     .navbar ul{
+         flex-direction: column;
+         width: 100%;
+         height: fit-content;
+         padding: 15px;
+         height: fit-content;
+         /*display: none;*/
+     }
+     
+     .navbar li{
+         padding: 5px;
+         text-align: center;
+     }
+
+     .navbar{
+         height: fit-content;
+     }
+     .navbar .container {
+         flex-direction: column;
+         height: fit-content;
+     }
+      body{
+          margin: 5px;
+      }
+      
+
+}
+
+@media (max-width:600px) {
+    .services .grid{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+      }
+}
+  
+  
