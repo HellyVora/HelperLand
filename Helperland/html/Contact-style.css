@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+
+  
+  .container {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0px 40px;
+  } 
+  
+
+  h1,
+  h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+    text-align: center;
+    font-family: Roboto;
+        font-size: 36px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.67;
+        letter-spacing: normal;
+        color:#4f4f4f;
+
+  }
+.image-banner{
+    height:370px;
+    width:100%;
+    margin-top: -5px;
+    object-fit: contain;
+    
+}
+
+.center-line{
+  width: 62px;
+  height: 1px;
+  margin: 30px 9px 54px 9px;
+  background-color: #ccc;
+}
+
+.center-img{
+  width: 24px;
+height: 25px;
+margin: 18px 8px 42px;
+}
+
+.Contact-us .container{
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+  align-items: center;
+
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+.grid-3 {
+grid-template-columns: repeat(3, 1fr);
+}
+
+.eclipse{
+  width: 108px;
+  height: 108px;
+  align-items: center;
+}
+
+.Rectangle-21 {
+  width: 75%;
+  height: 1px;
+  margin: 76px 210px 80px;
+  background-color: #e1e1e1;
+}
+
+.frm {
+  width: 40vw;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.frm div {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.frm div:first-child input {
+  border: 1px solid black;
+}
+
+.frm input {
+  padding: 12px 15px;
+  border: 1px solid grey;
+  width: 100%;
+}
+
+.frm form div:nth-child(4) textarea {
+  padding: 12px 15px;
+  border: 1px solid grey;
+  resize: none;
+}
+
+.frm form div:last-child {
+  justify-content: center;
+}
+
+.frm form div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+}
+
+.frm form div:nth-child(2) .pc {
+  display: flex;
+  gap: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.frm form div:nth-child(2) .pc input:first-child {
+  width: 25%;
+  padding: 0.5rem 0.8rem;
+  background-color: #EEEEEE;
+}
+
+.frm form div:nth-child(2) .pc input:last-child {
+  width: 100%;
+}
+
+.btn1 {
+  background-color: #1D7A8C;
+  border-radius: 23px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  height: 40px;
+  width: 160px;
+  color: aliceblue;
+}
+
+
+@media (max-width:900px){
+    .image-banner{
+        margin-top: -100px;
+    }
+
+}
