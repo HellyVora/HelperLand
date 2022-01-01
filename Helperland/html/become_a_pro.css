@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+
+  
+  .container {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0px 40px;
+  } 
+  
+
+  h1,
+  h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+    text-align: center;
+    font-family: Roboto;
+        font-size: 36px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.67;
+        letter-spacing: normal;
+        color:#4f4f4f;
+
+  }
+
+  .top{
+    background-image: url('img/become-a-pro-banner.png');
+    height: 930px;  
+    align-self: start;
+  }
+
+  .round-rectangle-1,
+  .rounded-rectangle-transperent,
+  .navbar{
+      background-color: transparent;
+  }
+
+  .register
+  {
+      height:70%;
+      width: 30%;
+      margin-top: 3%;
+      margin-left: 35%;
+      padding: 23px 35px 19px 36px;
+      background-color: white;
+  }
+
+  .txt{
+    width: 90%; 
+    height: 5%;
+    font-size: large;
+    padding: 3%;
+    margin-top: 5%;
+    margin-left: 5%;
+    border: solid 1px #c8c8c8;
+  }
+  .pc input:first-child {
+    width: 15%;
+
+    height: 10%;
+    font-size: large;
+    padding: 1%;
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: #EEEEEE;
+  }
+  .pc input:last-child {
+    width: 74%;
+    height: 5%;
+    font-size: large;
+    padding: 3%;
+    margin-top: 5%;
+    margin-left: 1%;
+  }
+
+  .robot{
+      height: 10%;
+      width: 90%;
+      padding: 3%;
+    margin-top: 5%;
+    margin-left: 5%;
+      border:solid 1px #c8c8c8;
+
+  }
+
+  .btn{
+    height: 10%;
+    width: 90%;
+    padding: 3%;
+  margin-top: 5%;
+  margin-left: 5%;
+    border-radius: 23px;
+  background-color: #1d7a8c;
+
+  }
+
+  .btn label{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: white;
+  }
+
+  .arrow_down{
+      margin-left: 50%;
+      margin-top: 5%;
+  }
+
+  .works{
+      height: 1000px;
+      width: 60%;
+      margin-top: 10%;
+      margin-left:20%;
+      margin-bottom: 5%;
+  }
+
+
+  #featureRight {
+	margin-top: 5%;
+	  overflow:hidden;
+}
+
+#featureRight img{
+	width:30%;
+  float:left;
+  margin-top: -10%;
+}
+
+#featureRight .title { 
+    margin-right: 10%;
+	width:50%;
+  text-align:left;
+  float:left;
+  padding:1em;
+  font-family: Roboto;
+  font-size: 30px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4f4f4f;
+}
+
+#featureRight .desc { 
+    margin-right: 10%;
+	width:50%;
+    padding:1em;
+  text-align:left;
+  float:left;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4f4f4f;
+}
+
+#featureLeft {
+	margin-top: 5%;
+	  overflow:hidden;
+}
+
+#featureLeft img{
+	width:30%;
+  float:right;
+  margin-top: -10%;
+}
+
+#featureLeft .title { 
+    margin-left: 10%;
+	width:50%;
+  text-align:right;
+  float:right;
+  padding:1em;
+  font-family: Roboto;
+  font-size: 30px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4f4f4f;
+}
+
+#featureLeft .desc { 
+    margin-left: 10%;
+	width:50%;
+    padding:1em;
+  text-align:left;
+  float:right;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #4f4f4f;
+}
