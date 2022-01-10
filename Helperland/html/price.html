@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Price_style.css" rel="stylesheet">
+    <link href="header-footer.css" rel="stylesheet">
     <title>Prices</title>
 </head>
 <body>
@@ -13,8 +14,12 @@
     <div class="navbar" style="background-color: #525252;"> 
         <div class="container flex" >
             <img src="img/white-logo-transparent-background.png" class="logo">
-           
-            <nav>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="navbar">
                 <ul>
                     <li><a href="#" class="round-rectangle-1">Book now</a></li>
                             <li><a href="#" class="rounded-rectangle-transperent">Prices and services</a></li>
@@ -26,7 +31,7 @@
                 </ul>
             </nav>
         </div>
-    </div>
+    </div> 
 
     <!---->
     <!--banner-->
@@ -269,5 +274,14 @@
             </div>
         </div>
 </footer>
+
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })
+</script>
 </body>
 </html>
