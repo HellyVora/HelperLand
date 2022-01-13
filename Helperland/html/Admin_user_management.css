@@ -88,7 +88,7 @@
     border-radius: 5px;
     background-color:#1fb6ff;
     color: white;
-    width: 150px;
+    width: 5%;
   height: 46px;
  
   }
@@ -96,15 +96,23 @@
 
   .clear_btn{
     border-radius: 5px;
-    width: 80px;
+    width: 5%;
     color: #555;
   height: 46px;
 
   }
+
+  tbody{
+    align-items: center;
+    align-content: center;
+  }
 .table_row{
+    align-self:center;
+    align-content: center;
     color: #646464;
     margin-left: 5px;
-    border: solid  1px #646464 ;
+    border-bottom: solid  1px #646464 ;
+    padding: 20px;
 }
 
 .form{
@@ -118,21 +126,21 @@
 }
 
 .form select{
-    width: 205px;
+    width: 18%;
     height: 46px;
     background: #FFFFFF;
     border: 1px solid #DEDDDD;
     color: #a0a0a0;
-    margin-left: 10px;
+    margin-left: 2%;
 }
 
 .form input{
-    width: 219px;
+    width: 18%;
     height: 46px;
     background: #FFFFFF;
     border: 1px solid #DEDDDD;
     border-radius: 4px;
-    margin-left: 10px;
+    margin-left: 2%;
 }
 
 .active_btn{
@@ -159,3 +167,5 @@
     border-bottom: 1pt solid #555;
     padding: 3%;
 }
+
+footer p {color: #A2A6A8; font-size: 14px; margin-left: 5%;}
