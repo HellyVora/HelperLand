@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/FAQ_Style.css" rel="stylesheet">
+    @RenderSection("Styles", false)
+    <title>FAQ</title>
+</head>
+
+<body>
+    <!--main start-->
+    <div class="main">
+        <!--header start-->
+        <div class="header" style="background-color: #525252;">
+            <div class="container flex">
+
+                <img src="~/images/white-logo-transparent-background.png" class="logo">
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <nav class="navbar">
+
+                    <ul>
+                        <li><a href="#" class="round-rectangle-1">Book now</a></li>
+                        <li><a asp-action="Prices" class="rounded-rectangle-transperent">Prices and services</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a asp-action="Contactus">Contact</a></li>
+                        <li><a href="#" class="round-rectangle-1">Login</a></li>
+                        <li><a href="#" class="round-rectangle-1">Become a Helper</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+
+
+
+        @RenderBody()
+
+
+        <footer>
+            <div class="row">
+                <img src="~/images/white-logo-transparent-background.png" class="logo-footer">
+                <ul class="footer-list">
+                    <li><a asp-action="Index" style="color:white">Home</a></li>
+                    <li><a asp-action="About" style="color:white">About</a></li>
+                    <li>Testimonials</li>
+                    <li> <a asp-action="Faq" style="color:white">FAQs </a></li>
+                    <li>Insurance Policy</li>
+                    <li>Impressum</li>
+                </ul>
+                <div class="icons">
+                    <a href="#"><img src="~/images/facebook.png" class="icons-img"></a>
+                    <a href="#"><img src="~/images/ic-instagram.png" class="icons-img"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-color">
+                    <div class="footer-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nunc libero, ac malesuada ligula
+                            aliquam ac.
+                            <span class="color-blue">Privacy Policy</span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--   Footer End  -->
+    </div>
+
+    <script>
+        var accordions = document.querySelectorAll("button.accordion");
+
+        for (var i = 0; i < accordions.length; i++) {
+            accordions[i].onclick = function () {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+
+            };
+        }
+
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
+

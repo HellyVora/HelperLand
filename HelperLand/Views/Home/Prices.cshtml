@@ -1,0 +1,295 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+
+}
+@section Styles {
+    <link href="@Url.Content("~/css/Price_style.css")" rel="stylesheet" type="text/css" />
+}
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/Price_style.css" rel="stylesheet">
+    <link href="~/css/header-footer.css" rel="stylesheet">
+    <title>Prices</title>
+</head>
+<body>-->
+<!-- Navbar -->
+<!--<div class="navbar" style="background-color: #525252;">
+    <div class="container flex">
+        <a asp-action="Index"><img src="~/images/white-logo-transparent-background.png" class="logo"></a>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="round-rectangle-1">Book now</a></li>
+                <li><a href="#" class="rounded-rectangle-transperent">Prices and services</a></li>
+                <li><a href="#">Warranty</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a asp-action="Contactus">Contact</a></li>
+                <li><a href="#" class="round-rectangle-1">Login</a></li>
+                <li><a href="#" class="round-rectangle-1">Become a Helper</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>-->
+<!---->
+<!--banner-->
+<section class="banner" style="height: 450px; margin-top: 0%;">
+    <img src="~/images/group-18.png" class="price-banner">
+</section>
+
+<!--prices-->
+<h1>Prices</h1>
+<div class="prices" style="width: 100%">
+    <div class="container flex">
+        <div class="center-line"></div>
+        <img src="~/images/separator.png" class="center-img">
+        <div class="center-line"></div>
+    </div>
+</div>
+<div class="one-time">
+    <div class="container">
+        <div class="blue-rect"><h4>ONE TIMES</h4></div>
+        <div class="price-details">
+            <h2>€ 20/hr</h2>
+            <ul>
+                <li>
+                    lower prices
+                </li>
+                <li>
+                    Easy online and secure payment
+                </li>
+                <li>
+                    Easy amendmnet
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!--extra services-->
+<h1>Extra Services</h1>
+<div class="prices" style="width: 100%">
+    <div class="container flex">
+        <div class="center-line"></div>
+        <img src="~/images/separator.png" class="center-img">
+        <div class="center-line"></div>
+    </div>
+    <section class="services">
+        <div class="container">
+            <div class="grid grid-5 text-center my-4">
+                <div>
+                    <div class="eclipse">
+                        <img src="~/images/3.png" class="services-img">
+                    </div>
+                    <h5>Inside cabinets</h5>
+                    <p class="text-secondary">30 minutes</p>
+                </div>
+                <div>
+                    <div class="eclipse">
+                        <img src="~/images/5.png" class="services-img">
+                    </div>
+
+                    <h5>Inside Fridge</h5>
+                    <p class="text-secondary">30 minutes</p>
+                </div>
+                <div>
+                    <div class="eclipse">
+                        <img src="~/images/4.png" class="services-img">
+                    </div>
+
+                    <h5>Inside oven</h5>
+                    <p class="text-secondary">30 minutes</p>
+                </div>
+                <div>
+                    <div class="eclipse">
+                        <img src="~/images/2.png" class="services-img">
+                    </div>
+                    <h5>Laundry wash & dry</h5>
+                    <p class="text-secondary">30 minutes</p>
+                </div>
+                <div>
+                    <div class="eclipse">
+                        <img src="~/images/1.png" class="services-img">
+                    </div>
+
+                    <h5>Interior windows</h5>
+                    <p class="text-secondary">30 minutes</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--what we include-->
+    <section class="include">
+        <h1 style="padding:5px;">What we include in cleaning</h1>
+        <div class="prices" style="width: 100%">
+            <div class="container flex">
+                <div class="center-line"></div>
+                <img src="~/images/separator.png" class="center-img">
+                <div class="center-line"></div>
+            </div>
+        </div>
+        <div class="container flex">
+            <div class="card">
+                <img src="~/images/group-18_3.png" class="card-img">
+                <h4>Bedroom and Living Room</h4>
+                <ul>
+                    <li>
+                        Dust all accessible surface
+                    </li>
+                    <li>
+                        Wipe down all mirrors and glass fixtures
+                    </li>
+                    <li>
+                        Clean all floor surfaces
+                    </li>
+                    <li>
+                        Take out garbage and recycling
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="~/images/group-18_4.png" class="card-img">
+                <h4>Bathroom</h4>
+                <ul>
+                    <li>
+                        Wash and sanitize the toilet, shower, tub, sink
+                    </li>
+                    <li>
+                        Dust all accessible surfaces
+                    </li>
+                    <li>
+
+                        Wipe down all mirrors and glass fixtures
+                    </li>
+                    <li>
+                        Clean all floor surfaces
+                    </li>
+                    <li>
+                        Take out garbage and recycling
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="~/images/group-18_2.png" class="card-img">
+                <h4>Kitchen</h4>
+                <ul>
+                    <li>
+                        Dust all accessible surfaces
+                    </li>
+                    <li>
+                        Empty sink and load up dishwasher
+                    </li>
+                    <li>
+                        Wipe down exterior of stove, oven and fridge
+                    </li>
+                    <li>
+                        Clean all floor surfaces
+                    </li>
+                    <li>
+                        Take out garbage and recycling
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Why Helperland-->
+    <h1 style="padding:5px; ">Why Helperland</h1>
+    <div class="prices" style="width: 100%">
+        <div class="container flex">
+            <div class="center-line"></div>
+            <img src="~/images/separator.png" class="center-img">
+            <div class="center-line"></div>
+        </div>
+    </div>
+
+    <div class="helperhand">
+        <div class="container flex">
+            <div class="text-end">
+                <h4>
+                    Experienced and vetted professionals</h3>
+                    <p>
+                        dominate the industry in scale and scope with an adaptable, extensive network that consistently delivers exceptional results.
+                        <br>
+                        <br>
+                    </p>
+                    <br>
+                    <br>
+                    <h4 style="margin-top: -100px;">Dedicated customer service</h4>
+                    <p>
+                        to our customers and are guided in all we do by their needs. The team is always happy to support you and offer all the information. you need.
+                    </p>
+            </div>
+            <div class="img-end">
+                <img src="~/images/the-best-img-1.png">
+            </div>
+            <div class="text-end-2">
+                <h4>
+                    Experienced and vetted professionals</h3>
+                    <p>
+                        dominate the industry in scale and scope with an adaptable, extensive network that consistently delivers exceptional results.
+                        <br>
+                        <br>
+                    </p>
+                    <br>
+                    <br>
+                    <h4 style="margin-top: -100px;">Dedicated customer service</h4>
+                    <p>
+                        to our customers and are guided in all we do by their needs. The team is always happy to support you and offer all the information. you need.
+                    </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+@*<footer>
+            <div class="row">
+                <img src="~/images/white-logo-transparent-background.png" class="logo-footer">
+                <ul class="footer-list">
+                    <li><a asp-action="Index" style="color:white">Home</a></li>
+                    <li ><a asp-action="About" style="color:white">About</a></li>
+                    <li>Testimonials</li>
+                    <li> <a asp-action="Faq" style="color:white">FAQs </a></li>
+                    <li>Insurance Policy</li>
+                    <li>Impressum</li>
+                </ul>
+                <div class="icons">
+                    <a href="#"><img src="~/images/facebook.png" class="icons-img"></a>
+                    <a href="#"><img src="~/images/ic-instagram.png" class="icons-img"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-color">
+                    <div class="footer-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nunc libero, ac malesuada ligula aliquam ac.
+                            <span class="color-blue">Privacy Policy</span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const toggleButton = document.getElementsByClassName('toggle-button')[0]
+            const navbarLinks = document.getElementsByClassName('navbar')[0]
+
+            toggleButton.addEventListener('click', () => {
+                navbarLinks.classList.toggle('active')
+            })
+        </script>
+    </body>
+    </html>*@
