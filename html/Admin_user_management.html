@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>admin</title>
+  <link href="Admin_user_management.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main" style="background-color: #f2f4f5;">
+    <div class="header">
+      <p class="header_text">
+      <h1>helperland</h1>
+      </p>
+     <!--    <div class="header_right">
+          <img class="header_user" src="img/admin-user.png" style="margin-right: 1%;">
+          <span class="admin_name" style="margin-left:1%;">James Smith</span>
+          <img class="header_logout" src="img/logout.png" style="margin-left: 1%;">
+        </div> -->
+
+        <ul class="header_right" style="list-style-type:none;">
+          <li style="padding: 5px;">
+            <a href="#"><img src="img/admin-user.png" alt=""></a>
+          </li>
+          <li style="padding: 5px;"><h3>James Smith</h3></li>
+          <li style="padding: 5px;">
+            <a href="#"><img src="img/logout.png" alt=""></a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="main_area" style="width: 100%; height: 750px; display: table; margin-top:-10% ;">
+      <div class="sidebar"
+        style="width:20%; height: 100%; display: table-cell; box-shadow: 2px 0 5.5px 0.5px rgba(0, 0, 0, 0.1); background-color: white ;">
+        <nav>
+          <ul>
+            <li><a href="#" class="list_item"> Service Management</a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item"> Role Management</a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item"> Coupon code Management </a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item">Escalation Management</a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item"> Service Requests</a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item"> Service Provider</a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item"> User Management</a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item"> Finance Module</a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item">Zip Code Management</a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item">Rating Management</a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item"> Inquiry Management</a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item">Newsletter Management</a>
+            </li>
+            <div class="line"></div>
+            <li><a href="#" class="list_item"> content Management</a>
+            </li>
+            <div class="line"></div>
+          </ul>
+        </nav>
+
+      </div>
+      <div class="center_table" style="width:65%; height:100%; display: table-cell;">
+        <p>
+        <h2 style="color:#525252; font-size: x-large;"><b>User Management</b></h2>
+        </p>
+        <button class="cancel_btn" style="float: right; margin-top: -4%"><b>Add New User</b> </button>
+
+        <div class="form">
+
+          <select name="Subjects" id="Subjects">
+            <option value="volvo">User Name</option>
+          </select>
+          <select name="Subjects" id="Subjects">
+            <option value="volvo">User Role</option>
+          </select>
+          <input type="text" id="phone" placeholder="Phone Number">
+          <input type="text" class="zip" id="Zipcode" placeholder="Zipcode">
+          <button class="search_btn" style="width: 5%;">
+            Search
+          </button>
+          <button class="clear_btn" style="width: 5%;">
+            Clear
+          </button>
+        </div>
+
+
+        <table style="width: 90%; background-color: white; color: #555; margin-left: 5%; margin-top: 1%; padding: 1%; border: none; box-shadow: 1px 1px; height: 500px;">
+          <thead style="padding: 5px;">
+            <tr style="background-color: #f9f9f9;" class="table_row">
+              <th class="table_heading">
+                User name
+                <input type="image" src="img/sort.png">
+              </th>
+              <th class="table_heading">
+                User type</th>
+              <th class="table_heading">
+                Role
+              </th>
+              <th class="table_heading">
+                Postal Code
+                <input type="image" src="img/sort.png">
+              </th>
+              <th class="table_heading">
+                City
+              </th>
+              <th class="table_heading">
+                Radius
+                <input type="image" src="img/sort.png">
+              </th>
+              <th class="table_heading">
+                User Status
+                <input type="image" src="img/sort.png">
+              </th>
+              <th class="table_heading">
+                Actions
+              </th>
+            </tr>
+          </thead>
+          <tbody style="align-items: center; ">
+            <tr class="table_row">
+              <td>
+                <p style="align-content: center; padding-left: 1%;">Lyum Watson</p>
+              </td>
+              <td>
+                <p>Call Center</p>
+              </td>
+
+              <td>
+                <p>Inquiry Manager</p>
+              </td>
+              <td> 123456</td>
+              <td>Berlin</td>
+              <td></td>
+              <td>
+                <button class="active_btn">Active</button>
+              </td>
+              <td>
+                <div class="menu-circle"><img src="assets/img/menu.png" alt="" class="user-menu"></div>
+              </td>
+            </tr>
+
+            <tr class="table_row">
+              <td>
+                <p>John Smith</p>
+              </td>
+              <td>
+                <p>Service Provider</p>
+              </td>
+
+              <td>
+                <p></p>
+              </td>
+              <td> 123456</td>
+              <td>Berlin</td>
+              <td>10 km</td>
+              <td>
+                <button class="active_btn">Active</button>
+              </td>
+              <td>
+                <div class="menu-circle"><img src="assets/img/menu.png" alt="" class="user-menu"></div>
+              </td>
+            </tr>
+            <tr class="table_row">
+              <td>
+                <p>John Smith</p>
+              </td>
+              <td>
+                <p>Call Center</p>
+              </td>
+
+              <td>
+                <p>Inquiry Manager</p>
+              </td>
+              <td> 123456</td>
+              <td>Berlin</td>
+              <td></td>
+              <td>
+                <button class="active_btn">Active</button>
+              </td>
+              <td>
+                <div class="menu-circle"><img src="assets/img/menu.png" alt="" class="user-menu"></div>
+              </td>
+            </tr>
+            <tr class="table_row">
+              <td>
+                <p>John Smith</p>
+              </td>
+              <td>
+                <p>Customer</p>
+              </td>
+
+              <td>
+                <p></p>
+              </td>
+              <td> 123456</td>
+              <td>Berlin</td>
+              <td></td>
+              <td>
+                <button class="active_btn">Active</button>
+              </td>
+              <td>
+                <div class="menu-circle"><img src="assets/img/menu.png" alt="" class="user-menu"></div>
+              </td>
+            </tr>
+            <tr class="table_row">
+              <td>
+                <p>John Smith</p>
+              </td>
+              <td>
+                <p>Call Center</p>
+              </td>
+
+              <td>
+                <p>Call Center</p>
+              </td>
+              <td> 123456</td>
+              <td>Berlin</td>
+              <td></td>
+              <td>
+                <button class="active_btn">Active</button>
+              </td>
+              <td>
+                <div class="menu-circle"><img src="assets/img/menu.png" alt="" class="user-menu"></div>
+              </td>
+            </tr>
+            <tr class="table_row">
+              <td>
+                <p>John Smith</p>
+              </td>
+              <td>
+                <p>Customer</p>
+              </td>
+
+              <td>
+                <p></p>
+              </td>
+              <td> 123456</td>
+              <td>Berlin</td>
+              <td></td>
+              <td>
+                <button class="inactive_btn">Inactive</button>
+              </td>
+              <td>
+                <div class="menu-circle"><img src="assets/img/menu.png" alt="" class="user-menu"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <footer>
+          <p>©2018 Helperland. All rights reserved.</p>
+        </footer>
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+
+</html>

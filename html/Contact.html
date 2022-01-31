@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="header-footer.css" rel="stylesheet">
+    <link href="Contact-style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar" style="background-color: #525252;">
+        <div class="container flex">
+            <img src="img/white-logo-transparent-background.png" class="logo">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="round-rectangle-1">Book now</a></li>
+                    <li><a href="#" class="rounded-rectangle-transperent">Prices and services</a></li>
+                    <li><a href="#">Warranty</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="round-rectangle-1">Login</a></li>
+                    <li><a href="#" class="round-rectangle-1">Become a Helper</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Image-->
+    <section class="banner" style="height: 450px; margin-top: 0%;">
+        <img src="img/group-16_2.png" class="image-banner">
+    </section>
+
+    <!--grid-->
+
+    <!--form-->
+    <section class="Contact-us">
+        <h1>Contact Us</h1>
+        <div class="container flex">
+            <div class="center-line"></div>
+            <img src="img/separator.png" class="center-img">
+            <div class="center-line"></div>
+        </div>
+        <div class="container">
+            <div class="grid grid-3 text-center">
+                <div>
+                    <div class="eclipse">
+                        <img src="img/forma-1_2.png" class="services-img">
+                    </div>
+                    <p class="text-secondary">1111 Lorem ipsum text 100, <br> Lorem ipsum AB</p>
+                </div>
+                <div>
+                    <div class="eclipse">
+                        <img src="img/phone-call.png" class="services-img">
+                    </div>
+
+
+                    <p class="text-secondary">+49 (40) 123 56 7890
+                        <br>+49 (40) 987 56 0000
+                    </p>
+                </div>
+                <div>
+                    <div class="eclipse">
+                        <img src="img/vector-smart-object.png" class="services-img">
+                    </div>
+
+
+                    <p class="text-secondary">info@helperhand.com</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <div class="Rectangle-21"> </div>
+
+    <!--form-->
+    <section class="form">
+        <h2>Get in touch with us</h2>
+
+        <div class="frm" style="align-items: center;">
+            <form>
+                <div>
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+                <div>
+                    <div class="pc">
+                        <input list="code" name="code" value="+49">
+
+                        <input type="tel" placeholder="Mobile number">
+                    </div>
+                    <input type="email" placeholder="Email address">
+                </div>
+                <div>
+                    <input list="subject" name="Subject" placeholder="subject">
+                    <datalist id="subject">
+                        <option value="Chemistry"></option>
+                        <option value="Chemistry"></option>
+                        <option value="Chemistry"></option>
+                    </datalist>
+                </div>
+            </form>
+
+    </section>
+
+    <section class="banner">
+        <img src="img/group-16.png" class="image-banner">
+    </section>
+
+
+    <!--footer-->
+    <footer>
+        <div class="row">
+            <img src="img/white-logo-transparent-background.png" class="logo-footer">
+            <ul class="footer-list">
+                <li>Home</li>
+                <li>About</li>
+                <li>Testimonials</li>
+                <li>FAQs</li>
+                <li>Insurance Policy</li>
+                <li>Impressum</li>
+            </ul>
+            <div class="icons">
+                <a href="#"><img src="img/facebook.png" class="icons-img"></a>
+                <a href="#"><img src="img/ic-instagram.png" class="icons-img"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer-color">
+                <div class="footer-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nunc libero, ac malesuada
+                        ligula aliquam ac.
+                        <span class="color-blue">Privacy Policy</span>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>

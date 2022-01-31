@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="header-footer.css" rel="stylesheet">
+    <link href="aboutus.css" rel="stylesheet">
+    <title>About US</title>
+</head>
+<body>
+     <!-- Navbar -->
+     <div class="navbar" style="background-color: #525252;"> 
+        <div class="container flex" >
+            <img src="img/white-logo-transparent-background.png" class="logo">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="round-rectangle-1">Book now</a></li>
+                            <li><a href="#" class="rounded-rectangle-transperent">Prices and services</a></li>
+                            <li><a href="#">Warranty</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#" class="round-rectangle-1">Login</a></li>
+                            <li><a href="#" class="round-rectangle-1">Become a Helper</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Image-->
+    <section class="banner"  >
+        <img src="img/hero-banner-img.png" class="image-banner">
+    </section>
+
+    <section class="few-words">
+        <h1>Few words about us</h1>
+        <div class="container flex">
+            <div class="center-line"></div>
+            <img src="img/separator.png" class="center-img">
+            <div class="center-line"></div>
+        </div>
+            <p style="text-align: center; color: #646464; font-size: 16px;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie convallis tempor. 
+                Duis vestibulum vel risus condimentum dictum. Orci varius natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus. Vivamus quis enim orci. Fusce risus lacus, sollicitudin eu magna sed,
+                pharetra sodales libero. Proin tincidunt vel erat id porttitor. Donec tristique est arcu, sed dignissim velit vulputate ultricies.
+                    <br>
+                    <br>
+
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst.
+                Vivamus eget mauris eget nisl euismod volutpat sed sed libero. Quisque sit amet lectus ex. Ut semper ligula
+                et mauris tincidunt hendrerit. Aenean ut rhoncus orci, vel elementum turpis. Donec tempor aliquet magna eu fringilla. 
+                Nam lobortis libero ut odio finibus lobortis. In hac habitasse platea dictumst. Mauris a hendrerit felis. Praesent ac 
+                vehicula ipsum, at porta tellus. Sed dolor augue, posuere sed neque eget, aliquam ultricies velit. Sed lacus elit, tincidunt
+                et massa ac, vehicula placerat lorem. 
+            </p>
+
+    </section>
+
+
+    <section class="few-words">
+        <h1>Our Story</h1>
+        <div class="container flex">
+            <div class="center-line"></div>
+            <img src="img/separator.png" class="center-img">
+            <div class="center-line"></div>
+        </div>
+            <p style="text-align: center; color: #646464; font-size: 16px;">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie convallis tempor. Duis vestibulum vel risus condimentum dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus quis enim orci. Fusce risus lacus, sollicitudin eu magna sed, pharetra sodales libero. Proin tincidunt vel erat id porttitor. Donec tristique est arcu, sed dignissim velit vulputate ultricies.
+                    <br>
+                    <br>
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Vivamus eget mauris eget nisl euismod volutpat sed sed libero. Quisque sit amet lectus ex. Ut semper ligula et mauris tincidunt hendrerit. 
+                <br>
+                <br>
+                Aenean ut rhoncus orci, vel elementum turpis. Donec tempor aliquet magna eu fringilla. Nam lobortis libero ut odio finibus lobortis. In hac habitasse platea dictumst. Mauris a hendrerit felis. Praesent ac vehicula ipsum, at porta tellus. Sed dolor augue, posuere sed neque eget, aliquam ultricies velit. Sed lacus elit, tincidunt et massa ac, vehicula placerat lorem. 
+            </p>
+
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="row">
+            <img src="img/white-logo-transparent-background.png" class="logo-footer">
+            <ul class="footer-list">
+                <li>Home</li>
+                <li>About</li>
+                <li>Testimonials</li>
+                <li>FAQs</li>
+                <li>Insurance Policy</li>
+                <li>Impressum</li>                                      
+            </ul>
+            <div class="icons">
+                <a href="#"><img src="img/facebook.png" class="icons-img"></a>
+                <a href="#"><img src="img/ic-instagram.png" class="icons-img"></a>
+            </div>
+          </div>
+            <div class="row">
+                <div class="footer-color">
+                    <div class="footer-text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nunc libero, ac malesuada ligula aliquam ac.
+                        <span class="color-blue">Privacy Policy</span>    
+                        
+                      </p>
+                     </div>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar')[0]
+    
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
