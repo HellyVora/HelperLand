@@ -1,0 +1,90 @@
+﻿@using HelperLand
+@model HelperLand.Models.User
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="d-flex justify-content-center mt-3" style="font-size: 4vw;">Create an account</div>
+<div class="devider d-flex flex-row justify-content-center">
+    <hr class="Rectangle-5-copy-5 ">
+    <div class="separator"><img style="height: 100%;width:100%;" src="img/separator.png"></div>
+    <hr class="Rectangle-5-copy-5 ">
+</div>
+<div class="container">
+    <div class="row justify-content-center margin-top-50">
+        <div class="col-md-6">
+            <form class="row g-3" method="post" asp-action="SignupPage">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="firstname" asp-for="FirstName" placeholder="First Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control"  id="lastname" asp-for="LastName" placeholder="Last Name">
+                </div>
+
+                <div class="col-6">
+                    <input type="email" class="form-control" id="email" asp-for="Email" placeholder="Email">
+                </div>
+                <div class="col-2">
+                    <select class="input-group-text" name="" id="">
+                        <option value="">+41</option>
+                        <option value="">+91</option>
+                    </select>
+
+
+                </div>
+
+                <div class="col-4">
+                    <input type="text" class="form-control" max="10" id="phone" asp-for="Mobile" placeholder="Mobile Number">
+                </div>
+
+                <div class="col-6">
+                    <input type="password" class="form-control" placeholder="password" asp-for="Password" id="passowrd">
+                </div>
+                <div class="col-6">
+                    <input type="password" class="form-control" placeholder="confirm password" asp-for="Password" id="cpassword">
+                    <span asp-validation-for="Password" class="text-danger" id="Confirm_pswd_msg"></span>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Yes, I would like to subscribe to the newsletter of Helperland GmbH with vouchers, trends,
+                        promotions and individualized offers. I can unsubscribe from the newsletter at any time in
+                        the newsletter and in the customer account itself.
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                        I agree with the <a href="#">terms and conditions</a> of Helperland GmbH.
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck3">
+                        I have read the <a href="#">privacy policy .</a>
+                    </label>
+                </div>
+
+                <div>
+                    <img src="images/download.png" class="download" alt="">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-sm d-flex justify-content-center"
+                        style="width: 30%; margin-left: 30%; " >
+                    Register
+                </button>
+
+                <div class="login-link text-center">
+                    Already have an account? <a href="" data-dismiss="modal"
+                                                data-toggle="modal" data-target="#loginModal">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -13,10 +13,10 @@
 
 .header{
     position: absolute;
+    height:5%;
     left: 0;
     width: 100%;
-    z-index: 1;
-    padding: 20px 5px 0;
+
 }   
 
 .flex{
