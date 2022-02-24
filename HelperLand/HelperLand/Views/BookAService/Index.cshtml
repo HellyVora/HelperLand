@@ -1,0 +1,161 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section Styles
+{
+    <link href="~/css/Booknowcss.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+}
+
+@*<div class="container">*@
+<div class="d-flex justify-content-center txt">Set up your cleaning service</div>
+<div class="forma1"></div>
+<section>
+    <div class="row d-flex flex-row">
+        <div col-sm-12 col-md-8 col-lg-8>
+            <table class="tabs" style="border: solid 1px #2b5998; padding: 10px;">
+                <tr>
+                    <td>
+                        <div id="tab1" class="tab active-tab" style="display: inline-block" onclick="Tab1Click()">Setup Service</div>
+                    </td>
+                    <td>
+                        <div id="tab2" class="tab" style="display: inline-block" onclick="Tab2Click()">Schedule & Plan</div>
+                    </td>
+                    <td>
+                        <div id="tab3" class="tab" style="display: inline-block; " onclick="Tab3Click()">Your Detail</div>
+                    </td>
+                    <td>
+                        <div id="tab4" class="tab" style="display: inline-block" onclick="Tab4Click()">Make Payment</div>
+                    </td>
+                </tr>
+            </table>
+            <div id="tabContent" style="border: solid 1px #2b5998; width: 900px; padding:20px;">
+                <br /><br />
+                <div id="tabContent1">
+                    Zip Code
+                    <input type="text" id="ZipCode" name="ZipCode" />
+                    <input type="button" value="Check Availability" onclick="SearchZipCode();" />
+                </div>
+                <div id="tabContent2" style="display:none;">
+                    Booking StartTime
+                    <input type="text" id="StartDate" name="StartDate" value="12/02/2022" />
+                    <input type="text" id="StartTime" name="StartTime" value="08:00" />
+                    Hours
+                    <select id="Hours" name="Hours">
+                        <option value="3">3 Hrs</option>
+                        <option value="3.5">3.5 Hrs</option>
+                        <option value="4">4 Hrs</option>
+                        <option value="4.5">4.5 Hrs</option>
+                    </select>
+                    <input type="button" value="Continue" onclick="SaveServiceDetail();" />
+                </div>
+                <div id="tabContent3" style="display:none;">
+                    <div id="divAddress"></div><br />
+                    <input type="button" value="Continue" onclick="SaveAddress();" />
+                </div>
+                <div id="tabContent4" style="display:none;">
+                    You are booking service request for zipcode <span id="confirmZipCode"></span>
+                    <br /><br />
+                    <input type="button" value="Complete Booking" onclick="CompleteBooking();" />
+                </div>
+                <div id="successMessage" style="display:none; color: green;"></div>
+                <br /><br />
+            </div>
+        </div>
+
+        @*======payment summery=====*@
+
+        <div col-md-4 col-lg-4>
+            <div class="payment-summary">
+                <h3 class="heading">
+                    Payment Summary
+                </h3>
+                <div class="content">
+                    <!---->
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Duration</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Basic</td>
+                                <td>0 Hrs</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <hr class="hr">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <b>Total Service Time</b>
+                                </td>
+                                <td>
+                                    <b>3 Hrs</b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="content">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Per cleaning</td>
+                                <td>
+                                    <b>0,00&nbsp;€</b>
+                                </td>
+                            </tr>
+                            <!---->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="content total-payment">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Total Payment</td>
+                                <td>0,00&nbsp;€</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p class="no-sales-tax">
+                                        According to § 19 UStG no sales tax is calculated.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr class="effective-price">
+
+                                <td>Effective Price</td>
+                                <td>
+                                    <b>0,00&nbsp;€</b>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        <a data-dismiss="modal" data-toggle="modal" href="#moreInfoOn20Modal">
+                            <span>*</span>You will save 20% according to §35a EStG.
+                        </a>
+                    </p>
+                </div>
+                <div class="footer">
+                    <img alt="Smiley" src="assets/images/smiley.png">
+                    <a data-dismiss="modal" data-toggle="modal" href="#servicesModal">
+                        See what is always
+                        included
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="~/js/booknowscript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+@*</div>*@
