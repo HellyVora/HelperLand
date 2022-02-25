@@ -1,0 +1,208 @@
+﻿@using HelperLand
+@*@model HelperLand.ViewModel.CustomerRegistrationViewModel*@
+@model HelperLand.Models.User;
+@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+@section Styles {
+    <link href="@Url.Content("~/css/become_a_pro.css")" rel="stylesheet" type="text/css" />
+}
+
+
+
+@*<section class="hero-banner-section m-0" style=" background-image:src(~/wwwroot/images/become-a-pro-banner.png); width:100% ">
+        <div class="container m-0 p-0">
+            <h2>Get in touch with us</h2>
+
+            <div class="frm" style="align-items: center;">
+                <form method="post" asp-action="BecomeAPro">
+                    <div>
+                        <input type="text" placeholder="First name" id="firstname" asp-for="FirstName" class="txt" style="margin-top: 5%;">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Last name" id="lastname" asp-for="LastName" class="txt">
+                    </div>
+                    <div>
+                        <input type="email" class="form-control" id="email" asp-for="Email" placeholder="Email">
+                    </div>
+                    <div>
+                        <div class="pc">
+                            <input type="text" class="form-control" max="10" id="phone" asp-for="Mobile" placeholder="Mobile Number">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="password" class="form-control" placeholder="password" asp-for="Password" id="password">
+                    </div>
+                    <div>
+                        <input type="password" placeholder=" confirm password" class="txt">
+                    </div>
+                    <div style="margin-left: 5%; margin-top: 5%;">
+                        <input type="checkbox" id="chk1">
+                        <label for="chk1" style="color: #4f4f4f;">Send me newsletters from Helperland </label>
+                    </div>
+                    <div style="margin-left: 5%; margin-top: 1%;">
+                        <input type="checkbox" id="chk2">
+                        <label for="chk2" style="color: #4f4f4f;">I accept terms and conditions & privacy policy </label>
+                    </div>
+                    <div class="robot">
+                        <input type="checkbox" id="chk3">
+                        <label for="chk2" style="color: #4f4f4f;">I am not Robot  </label>
+
+                    </div>
+                    <div>
+                        <button type="submit" class="btn">
+                            <label>Get started</label>
+                            <img src="img/arrow-white.png" style="margin-left: 5%;">
+                        </button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+        <img src="img/circle_downarrow.png" class="arrow_down">
+    </section>
+
+    <section>
+        <div class="works">
+            <h2>
+                How It Works
+            </h2>
+
+            <div id="featureRight">
+
+                <p class="title">  Register yourself </p>
+                <p class="desc">
+                    Provide your basic information to register
+                    yourself as a service provider.
+                </p>
+
+                <img src="img/work_2.png" />
+
+            </div>
+
+            <div id="featureLeft">
+
+                <p class="title"> Get service requests </p>
+                <p class="desc">
+                    You will get service requests from
+                    customes depend on service area and profile.
+                </p>
+
+                <img src="img/works_1.png" />
+
+            </div>
+
+            <div id="featureRight">
+
+                <p class="title">  Complete service </p>
+                <p class="desc">
+                    Accept service requests from your customers
+                    and complete your work.
+                </p>
+
+                <img src="img/work3.png" />
+
+            </div>
+        </div>
+    </section>*@
+
+<div class="register" style="border: solid 1px black;">
+    <h2>Get in touch with us</h2>
+
+    <div class="frm" style="align-items: center;">
+        <form method="post" asp-action="BecomeAPro">
+            <div>
+                <input type="text" placeholder="First name" id="firstname" asp-for="FirstName" class="txt" style="margin-top: 5%;" required>
+            </div>
+            <div>
+                <input type="text" placeholder="Last name" id="lastname" asp-for="LastName" class="txt" required>
+            </div>
+            <div>
+                <input type="text" class="txt" id="email" asp-for="Email" placeholder="Email" required>
+            </div>
+            <div>
+                <div class="pc">
+                    <input type="text" class=" txt" max="10" id="phone" asp-for="Mobile" placeholder="Mobile Number" required>
+                </div>
+            </div>
+            <div>
+                <input type="text" class="form-control txt" placeholder="password" asp-for="Password" id="password" required>
+            </div>
+            <div>
+                <input type="text" placeholder=" confirm password" class="txt" required>
+            </div>
+            <div style="margin-left: 5%; margin-top: 5%;">
+                <input type="checkbox" id="chk1">
+                <label for="chk1" style="color: #4f4f4f;">Send me newsletters from Helperland </label>
+            </div>
+            <div style="margin-left: 5%; margin-top: 1%;">
+                <input type="checkbox" id="chk2">
+                <label for="chk2" style="color: #4f4f4f;">I accept terms and conditions & privacy policy </label>
+            </div>
+            <div class="robot">
+                <input type="checkbox" id="chk3">
+                <label for="chk2" style="color: #4f4f4f;">I am not Robot  </label>
+
+            </div>
+            <div class="text-danger" asp-validation-summary="All"></div>
+            <div>
+                <button type="submit" class="btn">
+                    <label>Get started</label>
+                    <img src="~/images/arrow-white.png" style="margin-left: 5%;">
+                </button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<img src="~/images/circle_downarrow.png" class="arrow_down">
+    </div>
+
+<section>
+    <div class="works">
+        <h2>
+            How It Works
+        </h2>
+
+        <div id="featureRight">
+
+            <p class="title">  Register yourself </p>
+            <p class="desc">
+                Provide your basic information to register
+                yourself as a service provider.
+            </p>
+
+            <img src="~/images/work_2.png" />
+
+        </div>
+
+        <div id="featureLeft">
+
+            <p class="title"> Get service requests </p>
+            <p class="desc">
+                You will get service requests from
+                customes depend on service area and profile.
+            </p>
+
+            <img src="~/images/works_1.png" />
+
+        </div>
+
+        <div id="featureRight">
+
+            <p class="title">  Complete service </p>
+            <p class="desc">
+                Accept service requests from your customers
+                and complete your work.
+            </p>
+
+            <img src="~/images/work3.png" />
+
+        </div>
+    </div>
+</section>
+
+
