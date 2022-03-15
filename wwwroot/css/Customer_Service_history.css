@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+
+  
+  .container {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0px 40px;
+  } 
+  
+
+  h1,
+  h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+    text-align: center;
+    font-family: Roboto;
+        font-size: 36px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.67;
+        letter-spacing: normal;
+        color:#4f4f4f;
+
+  }
+
+  .middle_name{
+    width: 100%;
+    height: 150px;
+    margin: 1px 0 30px;
+    padding: 44px 0 0;
+    background-color: #f9f9f9;
+  }
+
+  .middle_name span{
+      margin-left: 45%;
+
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.8;
+    letter-spacing: normal;
+    text-align: right;
+    color: #4f4f4f;
+  }
+
+  .list_item{
+      font-size: 20px;
+      color: white;
+      margin-left: 10%;
+      border-bottom: 1px solid #555;
+      margin-top: 10%;
+  }
+  .center_table{
+      margin-left: 5%;
+  }
+  .table_heading{
+      color:#646464;
+      padding: 2px;
+  }
+
+
+  .table_row{
+      color: #646464;
+      margin-left: 5px;
+      border: solid  1px #646464 ;
+  }
+
+  .cancel_btn{
+    border-radius: 17px;
+    background-color:#6da9b5;
+    width: 80px;
+  height: 34px;
+  margin: 16px 21px 15px 85px;
+  }
+
+  .status_btn{
+    background-color: #67b644; 
+    color: white;
+     padding:5px 10px 4px 9px;
+  }
+
+
+
+/*.sidenav {
+   /*//* height: 100%; /* Full-height: remove this if you want "auto" height */
+    /*width: 160px;*/ /* Set the width of the sidebar */
+    /*position: fixed;*/ /* Fixed Sidebar (stay in place on scroll) */
+    /*z-index: 1;*/ /* Stay on top */
+    /*top: 0;*/ /* Stay at the top */
+    /*left: 0;
+    background-color: #1d7a8c;*/ /* Black */
+    /*overflow-x: hidden;*/ /* Disable horizontal scroll */
+    /*padding-top: 20px;
+}*/
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
