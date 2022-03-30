@@ -8,7 +8,6 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using HelperLand.Data;
-using HelperLand.Models;
 using Microsoft.AspNetCore.Http;
 
 
@@ -163,7 +162,8 @@ namespace HelperLand.Controllers
                                {
                                    userlist.UserId,
                                    userlist.FirstName,
-                                   userlist.UserTypeId
+                                   userlist.UserTypeId,
+                                   userlist.Email
                                }).ToList();
                 if (details.FirstOrDefault() != null)
                 {
@@ -171,6 +171,7 @@ namespace HelperLand.Controllers
                                                   details.FirstOrDefault().UserId.ToString());
                     HttpContext.Session.SetString("FirstName", details.FirstOrDefault().FirstName);
                     HttpContext.Session.SetString("UserTypeId", details.FirstOrDefault().UserTypeId.ToString());
+                    HttpContext.Session.SetString("Email", details.FirstOrDefault().Email.ToString());
                     if (loginViewModel.remember == true)
                     {
                         CookieOptions options = new CookieOptions();
@@ -186,9 +187,18 @@ namespace HelperLand.Controllers
                     HttpContext.Session.SetString("loggedIn", "yes");
                     HttpContext.Session.SetString("UserName", details.FirstOrDefault().FirstName);
 
-                 //   return View("Index");
-                 return RedirectToAction("ContactUs");
-
+                    // return View("Index");
+                    if (details.FirstOrDefault().UserTypeId == 1)
+                        // return RedirectToAction("Admin", "BookAService");
+                        return RedirectToAction("Customer","BookAService");
+                    if (details.FirstOrDefault().UserTypeId == 2)
+                        // return RedirectToAction("Admin", "BookAService");
+                        return RedirectToAction("ServiceProvider", "BookAService");
+                    if (details.FirstOrDefault().UserTypeId == 3)
+                         return RedirectToAction("Admin", "BookAService");
+                       // return RedirectToAction("Index");
+                    else
+                        return RedirectToAction("Index");
 
                 }
                 else

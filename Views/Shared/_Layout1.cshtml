@@ -1,5 +1,5 @@
 ﻿@using HelperLand
-@model HelperLand.ViewModel.LoginViewModel
+@*@model HelperLand.ViewModel.LoginViewModel*@
 @using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor HttpContextAccessor
 <!DOCTYPE html>
@@ -33,7 +33,7 @@
                 <nav class="navbar">
 
                     <ul>
-                        <li><a asp-action="book_service" asp-controller="BookAService" class="round-rectangle-1">Book now</a></li>
+                        <li ><a asp-action="book_service" asp-controller="BookAService" class="round-rectangle-1">Book now</a></li>
                         <li><a asp-action="Prices" asp-controller="Home" class="rounded-rectangle-transperent">Prices and services</a></li>
                         <li><a href="#">Warranty</a></li>
                         <li><a href="#">Blog</a></li>
@@ -58,7 +58,7 @@
 
     </div>
     <!-- login modal-->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!--<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header border-bottom-0">
@@ -104,7 +104,7 @@
         <span>
             @ViewBag.Message
         </span>
-    </div>
+    </div>-->
     <!--modal end-->
 
     <div>

@@ -11,6 +11,8 @@ namespace HelperLand.ViewModel
     {
         public List<AddressViewModel> address { get; set; }
         public PostalCodeViewModel postalCodeViewModel { get; set; }
+
+        public LoginViewModel loginViewModel { get; set; }
         public ServiceSetupViewModel ServiceSetupViewModel { get; set; }
         public string streetname { get; set; }
         public int houseno { get; set; }

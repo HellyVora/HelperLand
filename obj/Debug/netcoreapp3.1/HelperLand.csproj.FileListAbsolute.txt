@@ -87,3 +87,9 @@ C:\Users\helly\source\repos\HelperLand\HelperLand\obj\Debug\netcoreapp3.1\Razor\
 C:\Users\helly\source\repos\HelperLand\HelperLand\obj\Debug\netcoreapp3.1\Razor\Views\Home\BecomeAPro.cshtml.g.cs
 C:\Users\helly\source\repos\HelperLand\HelperLand\obj\Debug\netcoreapp3.1\Razor\Views\BookAService\book_service.cshtml.g.cs
 C:\Users\helly\source\repos\HelperLand\HelperLand\obj\Debug\netcoreapp3.1\Razor\Views\BookAService\Index.cshtml.g.cs
+C:\Users\helly\source\repos\HelperLand\HelperLand\obj\Debug\netcoreapp3.1\Razor\Views\Shared\CustomerLayout.cshtml.g.cs
+C:\Users\helly\source\repos\HelperLand\HelperLand\obj\Debug\netcoreapp3.1\Razor\Views\BookAService\Customer.cshtml.g.cs
+C:\Users\helly\source\repos\HelperLand\HelperLand\obj\Debug\netcoreapp3.1\Razor\Views\BookAService\Admin.cshtml.g.cs
+C:\Users\helly\source\repos\HelperLand\HelperLand\obj\Debug\netcoreapp3.1\Razor\Views\BookAService\ServiceProvider.cshtml.g.cs
+C:\Users\helly\source\repos\HelperLand\HelperLand\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLayout.cshtml.g.cs
+C:\Users\helly\source\repos\HelperLand\HelperLand\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ServiceProviderLayout.cshtml.g.cs
